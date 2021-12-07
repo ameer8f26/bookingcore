@@ -29,6 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        dd(asset('libs/bootstrap/css/bootstrap.css'));
         $home_page_id = setting_item('home_page_id');
         if($home_page_id && $page = Page::where("id",$home_page_id)->where("status","publish")->first())
         {
