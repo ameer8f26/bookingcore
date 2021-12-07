@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Chatify\Facades\ChatifyMessenger;
+use Chatify\Http\Controllers\MessagesController;
 use Modules\Page\Models\Page;
 use Modules\News\Models\NewsCategory;
 use Modules\News\Models\Tag;
